@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
+puts 'Hello 🙌 Welocme Tic Tac Toe game  please  press any button!'
+gets.chomp
+
 playerx = Player.new
-playerx.sign = 'x'
+playerx.sign = 'X'
 puts "Enter user 'X' name."
 playerx.name = gets.chomp
 while playerx.name =~ /[^a-zA-Z]/ || playerx.name == ''
@@ -10,7 +13,7 @@ while playerx.name =~ /[^a-zA-Z]/ || playerx.name == ''
 end
 
 playero = Player.new
-  playero.sign = 'o'
+  playero.sign = 'O'
   puts "Enter user 'O' name."
   playero.name = gets.chomp
   while playero.name =~ /[^a-zA-Z]/ || playero.name == '' || playero.name == playerx.name
