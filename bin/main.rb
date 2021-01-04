@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+require_relative "../lib/board.rb"
+require_relative "../lib/player.rb"
 
 puts 'Hello 🙌 Welocme Tic Tac Toe game  please  press any button!'
 gets.chomp
