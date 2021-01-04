@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+# rubocop:disable all
 puts 'Hello 🙌 Welocme Tic Tac Toe game  please  press any button!'
 gets.chomp
 
@@ -33,3 +33,5 @@ game=TicTacToe.new
 game.player1=playerx.name
 game.player2=playero.name
 game.play
+
+# rubocop:enable all
