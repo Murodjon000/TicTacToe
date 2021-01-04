@@ -14,7 +14,6 @@
 
 * [Requirements](#requirements)
 * [Built With](#built-with)
-* [Live Demo](#live-demo)
 * [Quick Start](#quick-start)
 * [Dependencies](#dependencies)
 * [Contributing](#contributing)
@@ -42,10 +41,6 @@ To win the game, a player must fill out a line with his symbol vertically, horiz
 
 - Ruby Language <br>
 - Git, Github and VScode <br>
-
-## Live Demo
-
-[Run on Repl.it](https://repl.it/@Murodjon0103/myenumberables#main.rb)
 
 ## Quick Start
 
