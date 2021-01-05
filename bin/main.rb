@@ -1,6 +1,5 @@
 # rubocop:disable all
 #!/usr/bin/env ruby
-
 puts 'Hello 🙌 Welocme Tic Tac Toe game  please  press any button!'
 gets.chomp
 
