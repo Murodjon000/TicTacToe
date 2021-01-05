@@ -52,7 +52,7 @@ playero = Player.new
   puts "#{playero.name} is your turn select number 1-9"
   num=gets.chomp
   puts "#{playero.name} selected #{num}"
-  puts "#{playerx.name} is your turn select number 1-9"
+   puts "#{playerx.name} is your turn select number 1-9"
   num=gets.chomp
   puts "#{playerx.name} selected #{num}"
   puts "#{playero.name} is your turn select number 1-9"
