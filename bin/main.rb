@@ -1,3 +1,5 @@
+# rubocop:disable all
+
 #!/usr/bin/env ruby
 require_relative "../lib/board.rb"
 require_relative "../lib/player.rb"
@@ -35,3 +37,5 @@ game=TicTacToe.new
 game.player1=playerx.name
 game.player2=playero.name
 game.play
+
+# rubocop:enable all
