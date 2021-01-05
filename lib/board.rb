@@ -1,4 +1,4 @@
-# rubocop:disable Style/CaseEquality
+# rubocop:disable all
 class TicTacToe
     attr_accessor :player1,:player2
         def initialize
@@ -129,5 +129,5 @@ class TicTacToe
       end
     
     end
-# rubocop:enable Style/CaseEquality
+# rubocop:enable all
     
