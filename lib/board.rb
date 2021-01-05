@@ -128,6 +128,7 @@ class TicTacToe
         BOARD
       end
     
-    end
+end
+
 # rubocop:enable all
     
