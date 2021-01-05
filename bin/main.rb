@@ -49,15 +49,19 @@ playero = Player.new
   puts "#{playerx.name} is your turn select number 1-9"
   num=gets.chomp
   puts "#{playerx.name} selected #{num}"
+  puts reference_board
   puts "#{playero.name} is your turn select number 1-9"
   num=gets.chomp
   puts "#{playero.name} selected #{num}"
+  puts reference_board
    puts "#{playerx.name} is your turn select number 1-9"
   num=gets.chomp
   puts "#{playerx.name} selected #{num}"
+  puts reference_board
   puts "#{playero.name} is your turn select number 1-9"
   num=gets.chomp
   puts "#{playero.name} selected #{num}"
+  puts reference_board
 
   puts "Congratulations #{playerx.name} Won"
   
