@@ -130,5 +130,4 @@ class TicTacToe
     
 end
 
-# rubocop:enable all
-    
+# rubocop:enable all 
