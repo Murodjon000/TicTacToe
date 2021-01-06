@@ -83,7 +83,7 @@ class TicTacToe
   end
 
   def full?
-    @board.all? { |token| token == 'X' || token == 'O' }
+    @board.all? { |token| %w[X O].include?(token) }
   end
 
   def draw?
@@ -122,5 +122,5 @@ class TicTacToe
           7 | 8 | 9
     BOARD
   end
-  
+
 end
