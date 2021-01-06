@@ -1,10 +1,5 @@
-# rubocop:disable all
+
 #!/usr/bin/env ruby
-class Player
-  attr_accessor :name,:sign
- end
-
-
 
 puts 'Hello 🙌 Welocme Tic Tac Toe game  please  press any button!'
 gets.chomp
@@ -28,44 +23,11 @@ playero = Player.new
     playero.name = gets.chomp
   end
 
-  def reference_board
-    <<-BOARD
-    1 | 2 | 3
-  ------------
-    4 | 5 | 6
-  ------------
-    7 | 8 | 9
-    BOARD
-  end
 
 
 
 
-  puts 'To see the game rules press any button!'
-  gets.chomp
-  puts "Each player shall select the number from table below! (only numbers from 1 to 9!)\n"
-  puts reference_board
+game.player1=playerx.name
+game.player2=playero.name
+game.play
 
-  puts "#{playerx.name} is your turn select number 1-9"
-  num=gets.chomp
-  puts "#{playerx.name} selected #{num}"
-  puts reference_board
-  puts "#{playero.name} is your turn select number 1-9"
-  num=gets.chomp
-  puts "#{playero.name} selected #{num}"
-  puts reference_board
-   puts "#{playerx.name} is your turn select number 1-9"
-  num=gets.chomp
-  puts "#{playerx.name} selected #{num}"
-  puts reference_board
-  puts "#{playero.name} is your turn select number 1-9"
-  num=gets.chomp
-  puts "#{playero.name} selected #{num}"
-  puts reference_board
-
-  puts "Congratulations #{playerx.name} Won"
-  
- 
-
-
-# rubocop:enable all
