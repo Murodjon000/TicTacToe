@@ -12,7 +12,7 @@
 
 ## Content
 
-* [Requirements](#requirements)
+* [Gameplay Instructions](#gameplay-instructions)
 * [Built With](#built-with)
 * [Quick Start](#quick-start)
 * [Dependencies](#dependencies)
