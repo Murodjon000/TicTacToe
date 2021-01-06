@@ -1,10 +1,11 @@
-
+# rubocop:disable all 
 #!/usr/bin/env ruby
+require_relative "../lib/board.rb"
+require_relative "../lib/player.rb"
 
 puts 'Hello 🙌 Welocme Tic Tac Toe game  please  press any button!'
 gets.chomp
 
- 
 playerx = Player.new
 playerx.sign = 'X'
 puts "Enter user 'X' name."
@@ -24,10 +25,15 @@ playero = Player.new
   end
 
 
+game=TicTacToe.new
 
 
+  puts 'To see the game rules press any button!'
+  gets.chomp
+  puts "Each player shall select the number from table below! (only numbers from 1 to 9!)\n"
+  puts game.reference_board
 
 game.player1=playerx.name
 game.player2=playero.name
 game.play
-
+# rubocop:enable all 
