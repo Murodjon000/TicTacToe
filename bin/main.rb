@@ -1,8 +1,5 @@
 # rubocop:disable all
 #!/usr/bin/env ruby
-<<<<<<< HEAD
-puts 'Hello world!'
-=======
 class Player
   attr_accessor :name,:sign
  end
@@ -71,5 +68,4 @@ playero = Player.new
  
 
 
->>>>>>> user_interface
 # rubocop:enable all
