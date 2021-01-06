@@ -1,12 +1,12 @@
 class TicTacToe
-    attr_accessor :player1, :player2
+  attr_accessor :player1, :player2
 
   def initialize
     @board = Array.new(9, ' ')
     @player1 = 'X'
     @player2 = 'O'
   end
-  
+
   WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -17,7 +17,7 @@ class TicTacToe
     [1, 4, 7],
     [2, 5, 8]
   ].freeze
-  
+
   def display_board
     puts "#{@board[0]} | #{@board[1]} | #{@board[2]}"
     puts '-----------'
@@ -25,22 +25,23 @@ class TicTacToe
     puts '-----------'
     puts "#{@board[6]} | #{@board[7]} | #{@board[8]}"
   end
-  
+
   def input_to_index(string)
     @choose = string.to_i - 1
   end
-  
+
   def move(input_to_index, player)
     @board[input_to_index] = player
   end
-  
+
   def position_taken?(input_to_index)
     %w[X O].include?(@board[input_to_index])
   end
-  
+
   def valid_move?(input_to_index)
     !position_taken?(input_to_index) && @board[input_to_index]
   end
+
   def turn_count
     count = 0
     @board.each do |elm|
@@ -48,11 +49,11 @@ class TicTacToe
     end
     count
   end
-  
+
   def current_player
     turn_count.even? ? 'X' : 'O'
   end
-  
+
   def turn
     if turn_count.even?
       puts "#{player1} Please enter 1-9"
@@ -72,7 +73,7 @@ class TicTacToe
       end
     end
   end
-  
+
   def won?
     WIN_COMBINATIONS.detect do |combo|
       @board[combo[0]] == @board[combo[1]] &&
@@ -80,25 +81,25 @@ class TicTacToe
         position_taken?(combo[0])
     end
   end
-  
+
   def full?
     @board.all? { |token| token == 'X' || token == 'O' }
   end
-  
+
   def draw?
     !won? && full?
   end
-  
+
   def over?
     won? || draw?
   end
-  
+
   def winner
     if winning_combo = won?
       @board[winning_combo.first]
     end
   end
-  
+
   def play
     turn until over?
     if won?
@@ -111,11 +112,7 @@ class TicTacToe
       puts 'Cat`s Game'
     end
   end
-  
-  def play_again
-    play
-  end
-    
+
   def reference_board
     <<-BOARD
           1 | 2 | 3
