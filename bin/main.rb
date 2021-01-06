@@ -44,10 +44,10 @@ while %(yes Y y Yes YES).include?(end_game)
   while my_board.turn_counter.to_i < 9
     current_user = check_current_user(playerx, playero, my_board.turn_counter)
 
-    puts "#{current_user.name} - select the number from the table below"
+    puts "#{current_user.name} - select the number from the table above"
     move = gets.chomp
     while my_board.position_taken?(move, my_board.game_board) || move =~ /[^0-9]/
-      puts 'Invalid number, please select another number'
+      puts 'Number is taken, please select another number'
       move = gets.chomp
       my_board.position_taken?(move, my_board.game_board)
     end
