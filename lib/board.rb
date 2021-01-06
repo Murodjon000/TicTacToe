@@ -128,8 +128,4 @@ class TicTacToe
   end
 end
   
-<<<<<<< HEAD
-# rubocop:enable all    
-=======
 # rubocop:enable all
->>>>>>> readme_game_instructions
